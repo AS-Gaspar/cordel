@@ -4,6 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 pre {
     white-space: pre-line;
 }
@@ -16,6 +22,7 @@ pre {
 html, body {
     min-height: 100vh; /*ocupar 100% da tela */
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -27,6 +34,8 @@ header {
 header> h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 4em;
 }
 
 header > p {
@@ -43,11 +52,13 @@ a:hover {
     text-decoration: underline;
 }
 
-section {
+section pre {
     padding-top: 10vh; /*ganhar espaço X da tela*/
     padding-bottom: 10vh;
     line-height: 2em; /*espaçamento linha*/
     padding-left: 20px; /* espaço entre borda esquerda e texto*/
+    font-family: var(--fonte3);
+    font-size: 3.5vh;
 }
 
 section.normal {
@@ -61,7 +72,8 @@ section.imagem {
 }
 
 section.imagem > pre {
-    width: 400px;
+    display: inline-block;
+    padding: 10px;
     background-color: rgb(43, 43, 43);
 }
 
