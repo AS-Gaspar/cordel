@@ -52,13 +52,16 @@ a:hover {
     text-decoration: underline;
 }
 
-section pre {
+section {
     padding-top: 10vh; /*ganhar espaço X da tela*/
     padding-bottom: 10vh;
+}
+
+section > pre {
+    font-family: var(--fonte3);
+    font-size: 3vh;
     line-height: 2em; /*espaçamento linha*/
     padding-left: 20px; /* espaço entre borda esquerda e texto*/
-    font-family: var(--fonte3);
-    font-size: 3.5vh;
 }
 
 section.normal {
@@ -69,12 +72,26 @@ section.normal {
 section.imagem {
     background-color: darkgray;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.433);
+    background-attachment: fixed;
 }
 
-section.imagem > pre {
+section.imagem pre {
     display: inline-block;
-    padding: 10px;
-    background-color: rgb(43, 43, 43);
+    padding: 50px;
+    background-color: rgba(43, 43, 43, 0.613);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(images/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(images/background002.jpg);
+    background-size: cover;
 }
 
 footer {
